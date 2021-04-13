@@ -24,8 +24,7 @@ namespace Task3
                 Console.WriteLine((i + 1) + " - " + args[i]);
             }
             Console.Write("Enter your move: ");
-            int UserChoice = Int32.Parse(Console.ReadLine());
-            UserChoice--;
+            int UserChoice = Int32.Parse(Console.ReadLine()) - 1;
             
             Console.WriteLine($"Your move: {args[UserChoice]}");
             Console.WriteLine("Computer move: " + args[PCChoice]);
